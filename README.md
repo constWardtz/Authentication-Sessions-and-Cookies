@@ -10,20 +10,6 @@
 $ npm install or yarn
 ```
 
-## How to use:
-
-1.  Open a terminal and go to repo's root directory.
-2.  Run in **DEVELOPMENT** mode.
-
-```terminal
-$ npm run dev or yarn dev
-```
-
-3.  Run in **PRODUCTION** mode.
-```terminal
-$ npm run build or yarn build
-```
-
 ## Follow me:
 
 - YouTube Channel: [constWardtz](https://youtube.com/constWardtz)
