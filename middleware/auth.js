@@ -9,13 +9,13 @@ exports.login = async (req, res) => {
   const isMatch = await bcrypt.compare(password, user.password);
 
   !user &&
-    res.status(200).json({
+    res.status(401).json({
       isAuth: false,
       message: "This email does not exist!",
     });
 
   !isMatch &&
-    res.status(200).json({
+    res.status(401).json({
       isAuth: false,
       message: "User don't have an account",
     });
@@ -34,7 +34,7 @@ exports.register = async (req, res) => {
   const hashPassword = await bcrypt.hash(password, 12);
 
   user &&
-    res.status(200).json({
+    res.status(401).json({
       isRegistered: false,
       message: "Already Exist!",
     });
